@@ -1,6 +1,6 @@
 {
   "name": "API_RESTFul",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple template of a RESTFul API made in Nodejs and Express.js",
   "main": "server.js",
   "scripts": {
