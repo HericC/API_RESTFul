@@ -1,4 +1,18 @@
 const con = require('../database/connection');
+const generateAccessJWT = require('../helpers/generateAccessJWT');
+
+module.exports.token = (req, res) => {
+    const userExemple = {
+        'id': 1,
+        'name': 'my name',
+        'last_name': 'my last name'
+    }
+
+    const token = generateAccessJWT(userExemple.id);
+    const auth = { 'auth': true, 'token': token };
+    return res.json(auth);
+}
+
 module.exports.select = (req, res) => {
     con.query('select * from test;', (err, result, field) => {
         if (err) return res.json({ 'error': err });
