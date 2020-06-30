@@ -48,16 +48,18 @@ If you don't have nodemon installed, run:
 node server.js
 ```
 
-### Release History
+### Release History (relevant)
 
-* 1.2.0
+* v0.3.0
     * ADD: Authenticate JWT
-* 1.1.0
+* v0.2.1
+    * ADD: cors implemented
+* v0.2.0
     * ADD: test example
-* 1.0.0
+* v0.1.0
     * API First Version implemented
-* 0.0.1
-    * Work in progress
+* v0.0.1
+    * Development in progress
 
 ### License
 
