@@ -8,6 +8,11 @@ server.set('url', process.env.URL || 'http://localhost');
 server.set('port', process.env.PORT || 3000);
 
 
+// cors config
+const cors = require('cors');
+server.use(cors());
+
+
 // bodyParser config
 const bodyParser = require('body-parser');
 server.use(bodyParser.urlencoded({ extended: true }));
