@@ -9,8 +9,8 @@ module.exports.select = (req, res) => {
 module.exports.insert = (req, res) => {
     const errors = [];
 
-    if (req.body.name === undefined) errors.push('name not defined');
-    if (req.body.last_name === undefined) errors.push('last_name not defined');
+    if (!req.body.name) errors.push('name not defined');
+    if (!req.body.last_name) errors.push('last_name not defined');
     if (errors.length) return res.json({ 'error': { 'msg': errors } });
 
     con.query(`insert into test (name, last_name) values ("${req.body.name}", "${req.body.last_name}");`, (err, result, field) => {
