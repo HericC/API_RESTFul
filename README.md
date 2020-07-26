@@ -48,19 +48,6 @@ If you don't have nodemon installed, run:
 node server.js
 ```
 
-### Release History (relevant)
-
-* v0.3.0
-    * ADD: Authenticate JWT
-* v0.2.1
-    * ADD: cors implemented
-* v0.2.0
-    * ADD: test example
-* v0.1.0
-    * API First Version implemented
-* v0.0.1
-    * Development in progress
-
 ### License
 
 This project is under the MIT license - see the [LICENSE.md](<https://github.com/HericC/API_RESTFul/blob/master/LICENSE>) file for details
